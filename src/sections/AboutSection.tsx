@@ -14,12 +14,21 @@ export default function AboutSection() {
       style={{ background: '#0C0C0C' }}
     >
       <div className="w-full max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16 relative z-10">
+        <FadeIn delay={0.1} y={40} className="lg:hidden">
+          <h2
+            className="hero-heading font-black uppercase leading-none tracking-tight text-center"
+            style={{ fontSize: 'clamp(2.5rem, 10vw, 100px)' }}
+          >
+            About me
+          </h2>
+        </FadeIn>
+
         <FadeIn delay={0} y={30} className="flex-shrink-0">
           <ProfileCard />
         </FadeIn>
 
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-8">
-          <FadeIn delay={0.1} y={40}>
+          <FadeIn delay={0.1} y={40} className="hidden lg:block">
             <h2
               className="hero-heading font-black uppercase leading-none tracking-tight"
               style={{ fontSize: 'clamp(2.5rem, 10vw, 100px)' }}
