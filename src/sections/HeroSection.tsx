@@ -74,7 +74,7 @@ export default function HeroSection() {
       </FadeIn>
 
       {/* Hero heading */}
-      <div className="overflow-hidden mt-12 sm:mt-28 md:mt-32">
+      <div className="overflow-hidden mt-8 sm:mt-28 md:mt-32">
         <FadeIn delay={0.15} y={0}>
           <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[11vw] sm:text-[9vw] md:text-[9.5vw] lg:text-[10vw]">
             Hi, i&apos;m M. Farhan
@@ -83,7 +83,7 @@ export default function HeroSection() {
       </div>
 
       {/* Portrait */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 top-[56%] -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-10 w-[280px] sm:w-[350px] md:w-[420px]">
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 top-[40%] -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-10 w-[220px] sm:w-[350px] md:w-[420px]">
         <FadeIn delay={0.6} y={30}>
           <Magnet>
             <img
