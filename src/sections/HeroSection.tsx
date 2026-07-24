@@ -18,7 +18,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative min-h-screen sm:h-screen flex flex-col" style={{ overflowX: 'clip' }}>
+    <section className="relative sm:h-screen flex flex-col" style={{ overflowX: 'clip' }}>
       {/* Navbar */}
       <FadeIn delay={0} y={-20} as="nav" className="relative z-30">
         <div className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8">

@@ -24,12 +24,12 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative px-5 sm:px-8 md:px-10 py-12 sm:py-16 md:py-20"
+      className="relative px-5 sm:px-8 md:px-10 py-8 sm:py-12 md:py-16"
       style={{ background: '#0C0C0C' }}
     >
       <FadeIn delay={0} y={30}>
         <h2
-          className="hero-heading font-black uppercase text-center mb-16 sm:mb-20 md:mb-24 leading-none tracking-tight"
+          className="hero-heading font-black uppercase text-center mb-10 sm:mb-16 md:mb-20 leading-none tracking-tight"
           style={{ fontSize: 'clamp(2.5rem, 10vw, 130px)' }}
         >
           Contact
