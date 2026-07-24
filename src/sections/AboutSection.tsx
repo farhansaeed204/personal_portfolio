@@ -10,7 +10,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative min-h-screen px-5 sm:px-8 md:px-10 py-20 flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-screen px-5 sm:px-8 md:px-10 pt-20 pb-0 flex flex-col items-center justify-center overflow-hidden"
       style={{ background: '#0C0C0C' }}
     >
       <div className="w-full max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16 relative z-10">
