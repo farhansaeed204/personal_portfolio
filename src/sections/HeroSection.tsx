@@ -18,7 +18,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative h-screen flex flex-col" style={{ overflowX: 'clip' }}>
+    <section className="relative min-h-screen sm:h-screen flex flex-col" style={{ overflowX: 'clip' }}>
       {/* Navbar */}
       <FadeIn delay={0} y={-20} as="nav" className="relative z-30">
         <div className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8">
@@ -83,7 +83,7 @@ export default function HeroSection() {
       </div>
 
       {/* Portrait */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 top-[40%] -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-10 w-[220px] sm:w-[350px] md:w-[420px]">
+      <div className="relative sm:absolute mx-auto sm:mx-0 sm:left-1/2 sm:-translate-x-1/2 z-10 sm:bottom-10 w-[280px] sm:w-[350px] md:w-[420px] mt-4 sm:mt-0">
         <FadeIn delay={0.6} y={30}>
           <Magnet>
             <img
@@ -97,10 +97,10 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom bar */}
-      <div className="mt-auto flex items-start sm:items-end justify-between pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 relative z-20">
+      <div className="flex flex-col sm:flex-row items-center sm:items-end justify-between mt-4 sm:mt-auto pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 relative z-20 gap-3 sm:gap-0">
         <FadeIn delay={0.35} y={20}>
           <p
-            className="max-w-[120px] sm:max-w-[220px] md:max-w-[260px] font-light uppercase tracking-wide leading-snug"
+            className="max-w-[200px] sm:max-w-[220px] md:max-w-[260px] text-center sm:text-left font-light uppercase tracking-wide leading-snug"
             style={{ color: '#D7E2EA', fontSize: 'clamp(0.6rem, 1.4vw, 1.5rem)' }}
           >
             a developer building AI-powered solutions and modern web applications
