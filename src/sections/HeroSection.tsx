@@ -22,6 +22,13 @@ export default function HeroSection() {
       {/* Navbar */}
       <FadeIn delay={0} y={-20} as="nav" className="relative z-30">
         <div className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8">
+          <span className="md:hidden text-sm font-bold uppercase tracking-wider" style={{
+            background: 'linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+          }}>
+            MF
+          </span>
           {NAV_LINKS.map((link) => (
             <button
               key={link}
@@ -67,18 +74,18 @@ export default function HeroSection() {
       </FadeIn>
 
       {/* Hero heading */}
-      <div className="overflow-hidden mt-20 sm:mt-28 md:mt-32">
+      <div className="overflow-hidden mt-12 sm:mt-28 md:mt-32">
         <FadeIn delay={0.15} y={0}>
-          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-normal sm:whitespace-nowrap w-full text-center text-[7vw] sm:text-[9vw] md:text-[9.5vw] lg:text-[10vw]">
+          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[11vw] sm:text-[9vw] md:text-[9.5vw] lg:text-[10vw]">
             Hi, i&apos;m M. Farhan
           </h1>
         </FadeIn>
       </div>
 
       {/* Portrait */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 top-[44%] -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-10 w-[200px] sm:w-[350px] md:w-[420px]">
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 top-[44%] -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-10 w-[280px] sm:w-[350px] md:w-[420px]">
         <FadeIn delay={0.6} y={30}>
-          <Magnet padding={100} strength={3} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.6s ease-in-out">
+          <Magnet>
             <img
               src={PORTRAIT_URL}
               alt="Muhammad Farhan, portfolio portrait"

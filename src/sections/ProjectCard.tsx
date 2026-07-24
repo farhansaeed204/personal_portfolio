@@ -68,11 +68,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               loading="lazy"
             />
           </div>
-          <div className="md:w-[60%]">
+          <div className="flex-1 min-h-0 md:flex-none md:w-[60%]">
             <img
               src={project.col2Image}
               alt={`${project.name} preview 3`}
-              className="w-full h-48 sm:h-64 md:h-full object-cover rounded-[20px] sm:rounded-[50px] md:rounded-[60px]"
+              className="w-full h-full object-cover rounded-[20px] sm:rounded-[50px] md:rounded-[60px]"
               loading="lazy"
             />
           </div>

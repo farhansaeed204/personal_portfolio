@@ -24,7 +24,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32"
+      className="relative px-5 sm:px-8 md:px-10 py-12 sm:py-16 md:py-20"
       style={{ background: '#0C0C0C' }}
     >
       <FadeIn delay={0} y={30}>
