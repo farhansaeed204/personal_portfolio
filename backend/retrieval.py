@@ -2,7 +2,10 @@ import math
 import re
 from collections import Counter
 
-from .knowledge import KNOWLEDGE_CHUNKS
+try:
+    from .knowledge import KNOWLEDGE_CHUNKS
+except ImportError:
+    from knowledge import KNOWLEDGE_CHUNKS
 
 K1 = 1.5
 B = 0.75

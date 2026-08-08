@@ -4,7 +4,10 @@ from openai import AsyncOpenAI
 
 from agents import Agent, OpenAIChatCompletionsModel, Runner, function_tool
 
-from .retrieval import retrieve
+try:
+    from .retrieval import retrieve
+except ImportError:
+    from retrieval import retrieve
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 

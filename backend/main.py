@@ -5,7 +5,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from .agent import run_agent
+try:
+    from .agent import run_agent
+except ImportError:
+    from agent import run_agent
 
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
