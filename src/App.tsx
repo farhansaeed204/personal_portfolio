@@ -6,6 +6,7 @@ import ServicesSection from './sections/ServicesSection'
 import ProjectsSection from './sections/ProjectsSection'
 import ContactSection from './sections/ContactSection'
 import Footer from './sections/Footer'
+import ChatWidget from './components/ChatWidget'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ProjectsSection />
       <ContactSection />
       <Footer />
+      <ChatWidget />
     </div>
   )
 }
