@@ -15,7 +15,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:4173",
-    "https://personal-portfolio-farhansaeed204.vercel.app",
+    "https://personal-portfolio-m-farhan.vercel.app",
 ]
 
 app = FastAPI(title="Portfolio Chatbot API")
