@@ -2,13 +2,16 @@
 name = "portfolio-backend"
 version = "0.1.0"
 requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.4.0",
+    "openai>=1.60.0",
+    "fastapi[standard]>=0.115.0",
+    "uvicorn>=0.32.0",
+    "python-dotenv>=1.0.1",
+]
 
 [tool.fastapi]
 entrypoint = "main:app"
 
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-py-modules = ["main", "agent", "knowledge", "retrieval"]
+[tool.uv]
+package = false
