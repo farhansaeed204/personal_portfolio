@@ -13,5 +13,9 @@ dependencies = [
 [tool.fastapi]
 entrypoint = "main:app"
 
-[tool.uv]
-package = false
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "agent", "knowledge", "retrieval"]
